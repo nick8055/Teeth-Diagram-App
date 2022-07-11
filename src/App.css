@@ -1,38 +1,152 @@
-.App {
-  text-align: center;
+body{
+  background: rgba(231, 231, 231, 0.8);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#TeethDiagramContainer{
+  border-style: solid;
+  border-width: 2px;
+  border-color: white;
+  border-radius: 40px;
+  width: 547px;
+  height: 795px;
+  margin: 0 auto;
+  position: relative;
+  background: rgb(237, 237, 237);
+  box-shadow: 1px 5px 5px 5px rgb(204, 204, 204);
+  transition: all 0.5s ease;
+  
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#TeethDiagramContainer:hover{
+  box-shadow: 10px 10px 15px 15px rgb(183, 183, 183);
+  
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+button{
+  width: 48px;
+  height: 48px;
+  border-radius: 20px;
+  border-style: none;
+  background-color: rgb(237, 237, 237);
+  /* box-shadow: 0.5px 0.5px 0.5px 0.5px rgb(204, 204, 204); */
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+button:hover{
+  border-width: 2px;
+  /* box-shadow: 2px 2px 2px 2px rgb(127, 126, 126); */
+  box-shadow: 1px 1px 1px 1px rgb(144, 144, 144);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+/* button:focus{
+  background-color: yellow;
+} */
+
+ #b1{position: absolute; left: 110px; top: 325px;}
+
+ #b2{position: absolute; left:122px; top: 270px;}
+
+#b3{position: absolute;  left:140px;  top: 220px;}
+
+#b4{position: absolute;  left:172px;  top: 170px;}
+
+#b5{position: absolute;  left:220px;  top: 140px;}
+
+#b6{position: absolute;  left:275px;  top: 140px;}
+
+#b7{position: absolute;  left:326px;  top: 170px;}
+
+#b8{position: absolute;  left:358px;  top: 217px;}
+
+#b9{position: absolute;  left:376px;  top: 270px;}
+
+#b10{position: absolute;  left:388px;  top: 325px;}
+
+
+
+#b11{  position: absolute;  left:110px;  top: 420px;}
+
+#b12{  position: absolute;  left:122px;  top: 473px;}
+
+#b13{ position: absolute;  left:140px;  top: 525px;}
+
+#b14{ position: absolute; left:172px; top: 575px;}
+
+#b15{  position: absolute;  left:222px;  top: 600px;}
+
+#b16{  position: absolute;  left:276px;  top: 600px;}
+
+#b17{  position: absolute;  left:326px; top: 575px;}
+
+#b18{  position: absolute;  left:358px;  top: 525px;}
+
+#b19{  position: absolute;  left:376px;  top: 475px;}
+
+#b20{  position: absolute;  left:388px;  top: 420px;}
+
+
+
+#t1{position: absolute; left: 10px; top: 325px;}
+
+#t2{position: absolute; left: 17px; top: 270px;}
+
+#t3{position: absolute; left: 29px; top: 220px;}
+
+#t4{position: absolute; left: 49px; top: 170px;}
+
+#t5{position: absolute; left: 81px; top: 120px;}
+
+#t6{position: absolute; left: 112px; top: 65px;} 
+
+#t7{position: absolute; left: 165px; top: 30px;}  
+
+#t8{position: absolute; left: 220px; top: 10px;} 
+
+#t9{position: absolute; left: 275px; top: 10px;} 
+
+#t10{position: absolute; left: 333px; top: 30px;}  
+
+#t11{position: absolute; left: 385px; top: 65px;} 
+
+#t12{position: absolute; left: 416px; top: 120px;}
+
+#t13{position: absolute; left: 448px; top: 170px;}
+
+#t14{position: absolute; left: 468px; top: 220px;}
+
+#t15{position: absolute; left: 480px; top: 270px;}
+
+#t16{position: absolute; left: 487px; top: 325px;}
+
+
+#t17{  position: absolute;  left:10px;  top: 420px;}
+
+#t18{position: absolute; left: 17px; top: 475px;}
+
+#t19{position: absolute; left: 29px; top: 525px;}
+
+#t20{position: absolute; left: 49px; top: 575px;}
+
+#t21{position: absolute; left: 81px; top: 625px;}
+
+#t22{position: absolute; left: 112px; top: 680px;} 
+
+#t23{position: absolute; left: 165px; top: 715px;}  
+
+#t24{position: absolute; left: 220px; top: 735px;} 
+
+#t25{position: absolute; left: 275px; top: 735px;}
+
+#t26{position: absolute; left: 333px; top: 715px;}  
+
+#t27{position: absolute; left: 385px; top: 680px;} 
+
+#t28{position: absolute; left: 416px; top: 625px;}
+
+#t29{position: absolute; left: 448px; top: 575px;}
+
+#t30{position: absolute; left: 468px; top: 525px;}
+
+#t31{position: absolute; left: 480px; top: 475px;}
+
+#t32{position: absolute; left: 487px; top: 420px;}  
