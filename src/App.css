@@ -1,152 +1,410 @@
-body{
+:root {
+  --factor: 1;
+}
+
+body {
   background: rgba(231, 231, 231, 0.8);
 }
 
-#TeethDiagramContainer{
+#TeethDiagramContainer {
   border-style: solid;
-  border-width: 2px;
+  border-width: calc(1px * var(--factor));
   border-color: white;
-  border-radius: 40px;
-  width: 547px;
-  height: 795px;
-  margin: 0 auto;
+  border-radius: calc(40px * var(--factor));
+  width: calc(547px * var(--factor));
+  height: calc(795px * var(--factor));
+  margin: auto;
   position: relative;
   background: rgb(237, 237, 237);
   box-shadow: 1px 5px 5px 5px rgb(204, 204, 204);
-  transition: all 0.5s ease;
-  
+  transition: all 0.25s ease;
+  /* margin-left: calc(50px * var(--factor));
+  margin-top: calc(50px * var(--factor)); */
 }
 
-#TeethDiagramContainer:hover{
-  box-shadow: 10px 10px 15px 15px rgb(183, 183, 183);
-  
+#TeethDiagramContainer:hover {
+  box-shadow: calc(10px * var(--factor)) calc(10px * var(--factor))
+    calc(15px * var(--factor)) calc(15px * var(--factor)) rgb(183, 183, 183);
 }
 
-button{
-  width: 48px;
-  height: 48px;
-  border-radius: 20px;
+button {
+  width: calc(48px * var(--factor));
+  height: calc(48px * var(--factor));
+  border-radius: calc(20px * var(--factor));
   border-style: none;
   background-color: rgb(237, 237, 237);
   /* box-shadow: 0.5px 0.5px 0.5px 0.5px rgb(204, 204, 204); */
   cursor: pointer;
+  transition: all 0.25s ease;
 }
 
-button:hover{
-  border-width: 2px;
+button:hover {
+  border-width: calc(2px * var(--factor));
   /* box-shadow: 2px 2px 2px 2px rgb(127, 126, 126); */
-  box-shadow: 1px 1px 1px 1px rgb(144, 144, 144);
+  box-shadow: calc(1px * var(--factor)) calc(1px * var(--factor))
+    calc(1px * var(--factor)) calc(1px * var(--factor)) rgb(144, 144, 144);
 }
 
 /* button:focus{
   background-color: yellow;
 } */
 
- #b1{position: absolute; left: 110px; top: 325px;}
+#b1 {
+  position: absolute;
+  left: calc(110px * var(--factor));
+  top: calc(325px * var(--factor));
+}
 
- #b2{position: absolute; left:122px; top: 270px;}
+#b2 {
+  position: absolute;
+  left: calc(122px * var(--factor));
+  top: calc(270px * var(--factor));
+}
 
-#b3{position: absolute;  left:140px;  top: 220px;}
+#b3 {
+  position: absolute;
+  left: calc(140px * var(--factor));
+  top: calc(220px * var(--factor));
+}
 
-#b4{position: absolute;  left:172px;  top: 170px;}
+#b4 {
+  position: absolute;
+  left: calc(172px * var(--factor));
+  top: calc(170px * var(--factor));
+}
 
-#b5{position: absolute;  left:220px;  top: 140px;}
+#b5 {
+  position: absolute;
+  left: calc(220px * var(--factor));
+  top: calc(140px * var(--factor));
+}
 
-#b6{position: absolute;  left:275px;  top: 140px;}
+#b6 {
+  position: absolute;
+  left: calc(275px * var(--factor));
+  top: calc(140px * var(--factor));
+}
 
-#b7{position: absolute;  left:326px;  top: 170px;}
+#b7 {
+  position: absolute;
+  left: calc(326px * var(--factor));
+  top: calc(170px * var(--factor));
+}
 
-#b8{position: absolute;  left:358px;  top: 217px;}
+#b8 {
+  position: absolute;
+  left: calc(358px * var(--factor));
+  top: calc(217px * var(--factor));
+}
 
-#b9{position: absolute;  left:376px;  top: 270px;}
+#b9 {
+  position: absolute;
+  left: calc(376px * var(--factor));
+  top: calc(270px * var(--factor));
+}
 
-#b10{position: absolute;  left:388px;  top: 325px;}
+#b10 {
+  position: absolute;
+  left: calc(388px * var(--factor));
+  top: calc(325px * var(--factor));
+}
 
+#b11 {
+  position: absolute;
+  left: calc(110px * var(--factor));
+  top: calc(420px * var(--factor));
+}
 
+#b12 {
+  position: absolute;
+  left: calc(122px * var(--factor));
+  top: calc(473px * var(--factor));
+}
 
-#b11{  position: absolute;  left:110px;  top: 420px;}
+#b13 {
+  position: absolute;
+  left: calc(140px * var(--factor));
+  top: calc(525px * var(--factor));
+}
 
-#b12{  position: absolute;  left:122px;  top: 473px;}
+#b14 {
+  position: absolute;
+  left: calc(172px * var(--factor));
+  top: calc(575px * var(--factor));
+}
 
-#b13{ position: absolute;  left:140px;  top: 525px;}
+#b15 {
+  position: absolute;
+  left: calc(222px * var(--factor));
+  top: calc(600px * var(--factor));
+}
 
-#b14{ position: absolute; left:172px; top: 575px;}
+#b16 {
+  position: absolute;
+  left: calc(276px * var(--factor));
+  top: calc(600px * var(--factor));
+}
 
-#b15{  position: absolute;  left:222px;  top: 600px;}
+#b17 {
+  position: absolute;
+  left: calc(326px * var(--factor));
+  top: calc(575px * var(--factor));
+}
 
-#b16{  position: absolute;  left:276px;  top: 600px;}
+#b18 {
+  position: absolute;
+  left: calc(358px * var(--factor));
+  top: calc(525px * var(--factor));
+}
 
-#b17{  position: absolute;  left:326px; top: 575px;}
+#b19 {
+  position: absolute;
+  left: calc(376px * var(--factor));
+  top: calc(475px * var(--factor));
+}
 
-#b18{  position: absolute;  left:358px;  top: 525px;}
+#b20 {
+  position: absolute;
+  left: calc(388px * var(--factor));
+  top: calc(420px * var(--factor));
+}
 
-#b19{  position: absolute;  left:376px;  top: 475px;}
+#t1 {
+  position: absolute;
+  left: calc(10px * var(--factor));
+  top: calc(325px * var(--factor));
+}
 
-#b20{  position: absolute;  left:388px;  top: 420px;}
+#t2 {
+  position: absolute;
+  left: calc(17px * var(--factor));
+  top: calc(270px * var(--factor));
+}
 
+#t3 {
+  position: absolute;
+  left: calc(29px * var(--factor));
+  top: calc(220px * var(--factor));
+}
 
+#t4 {
+  position: absolute;
+  left: calc(49px * var(--factor));
+  top: calc(170px * var(--factor));
+}
 
-#t1{position: absolute; left: 10px; top: 325px;}
+#t5 {
+  position: absolute;
+  left: calc(81px * var(--factor));
+  top: calc(120px * var(--factor));
+}
 
-#t2{position: absolute; left: 17px; top: 270px;}
+#t6 {
+  position: absolute;
+  left: calc(112px * var(--factor));
+  top: calc(65px * var(--factor));
+}
 
-#t3{position: absolute; left: 29px; top: 220px;}
+#t7 {
+  position: absolute;
+  left: calc(165px * var(--factor));
+  top: calc(30px * var(--factor));
+}
 
-#t4{position: absolute; left: 49px; top: 170px;}
+#t8 {
+  position: absolute;
+  left: calc(220px * var(--factor));
+  top: calc(10px * var(--factor));
+}
 
-#t5{position: absolute; left: 81px; top: 120px;}
+#t9 {
+  position: absolute;
+  left: calc(275px * var(--factor));
+  top: calc(10px * var(--factor));
+}
 
-#t6{position: absolute; left: 112px; top: 65px;} 
+#t10 {
+  position: absolute;
+  left: calc(333px * var(--factor));
+  top: calc(30px * var(--factor));
+}
 
-#t7{position: absolute; left: 165px; top: 30px;}  
+#t11 {
+  position: absolute;
+  left: calc(385px * var(--factor));
+  top: calc(65px * var(--factor));
+}
 
-#t8{position: absolute; left: 220px; top: 10px;} 
+#t12 {
+  position: absolute;
+  left: calc(416px * var(--factor));
+  top: calc(120px * var(--factor));
+}
 
-#t9{position: absolute; left: 275px; top: 10px;} 
+#t13 {
+  position: absolute;
+  left: calc(448px * var(--factor));
+  top: calc(170px * var(--factor));
+}
 
-#t10{position: absolute; left: 333px; top: 30px;}  
+#t14 {
+  position: absolute;
+  left: calc(468px * var(--factor));
+  top: calc(220px * var(--factor));
+}
 
-#t11{position: absolute; left: 385px; top: 65px;} 
+#t15 {
+  position: absolute;
+  left: calc(480px * var(--factor));
+  top: calc(270px * var(--factor));
+}
 
-#t12{position: absolute; left: 416px; top: 120px;}
+#t16 {
+  position: absolute;
+  left: calc(487px * var(--factor));
+  top: calc(325px * var(--factor));
+}
 
-#t13{position: absolute; left: 448px; top: 170px;}
+#t17 {
+  position: absolute;
+  left: calc(10px * var(--factor));
+  top: calc(420px * var(--factor));
+}
 
-#t14{position: absolute; left: 468px; top: 220px;}
+#t18 {
+  position: absolute;
+  left: calc(17px * var(--factor));
+  top: calc(475px * var(--factor));
+}
 
-#t15{position: absolute; left: 480px; top: 270px;}
+#t19 {
+  position: absolute;
+  left: calc(29px * var(--factor));
+  top: calc(525px * var(--factor));
+}
 
-#t16{position: absolute; left: 487px; top: 325px;}
+#t20 {
+  position: absolute;
+  left: calc(49px * var(--factor));
+  top: calc(575px * var(--factor));
+}
 
+#t21 {
+  position: absolute;
+  left: calc(81px * var(--factor));
+  top: calc(625px * var(--factor));
+}
 
-#t17{  position: absolute;  left:10px;  top: 420px;}
+#t22 {
+  position: absolute;
+  left: calc(112px * var(--factor));
+  top: calc(680px * var(--factor));
+}
 
-#t18{position: absolute; left: 17px; top: 475px;}
+#t23 {
+  position: absolute;
+  left: calc(165px * var(--factor));
+  top: calc(715px * var(--factor));
+}
 
-#t19{position: absolute; left: 29px; top: 525px;}
+#t24 {
+  position: absolute;
+  left: calc(220px * var(--factor));
+  top: calc(735px * var(--factor));
+}
 
-#t20{position: absolute; left: 49px; top: 575px;}
+#t25 {
+  position: absolute;
+  left: calc(275px * var(--factor));
+  top: calc(735px * var(--factor));
+}
 
-#t21{position: absolute; left: 81px; top: 625px;}
+#t26 {
+  position: absolute;
+  left: calc(333px * var(--factor));
+  top: calc(715px * var(--factor));
+}
 
-#t22{position: absolute; left: 112px; top: 680px;} 
+#t27 {
+  position: absolute;
+  left: calc(385px * var(--factor));
+  top: calc(680px * var(--factor));
+}
 
-#t23{position: absolute; left: 165px; top: 715px;}  
+#t28 {
+  position: absolute;
+  left: calc(416px * var(--factor));
+  top: calc(625px * var(--factor));
+}
 
-#t24{position: absolute; left: 220px; top: 735px;} 
+#t29 {
+  position: absolute;
+  left: calc(448px * var(--factor));
+  top: calc(575px * var(--factor));
+}
 
-#t25{position: absolute; left: 275px; top: 735px;}
+#t30 {
+  position: absolute;
+  left: calc(468px * var(--factor));
+  top: calc(525px * var(--factor));
+}
 
-#t26{position: absolute; left: 333px; top: 715px;}  
+#t31 {
+  position: absolute;
+  left: calc(480px * var(--factor));
+  top: calc(475px * var(--factor));
+}
 
-#t27{position: absolute; left: 385px; top: 680px;} 
+#t32 {
+  position: absolute;
+  left: calc(487px * var(--factor));
+  top: calc(420px * var(--factor));
+}
 
-#t28{position: absolute; left: 416px; top: 625px;}
+@media only screen and (max-width: 550px) {
+  :root {
+    --factor: 0.8;
+  }
+}
 
-#t29{position: absolute; left: 448px; top: 575px;}
+@media only screen and (max-width: 440px) {
+  :root {
+    --factor: 0.64;
+  }
+}
 
-#t30{position: absolute; left: 468px; top: 525px;}
+@media only screen and (max-width: 350px) {
+  :root {
+    --factor: 0.512;
+  }
+}
 
-#t31{position: absolute; left: 480px; top: 475px;}
+@media only screen and (max-height: 800px) {
+  :root {
+    --factor: 0.8;
+  }
+}
 
-#t32{position: absolute; left: 487px; top: 420px;}  
+@media only screen and (max-height: 630px) {
+  :root {
+    --factor: 0.64;
+  }
+}
+
+@media only screen and (max-height: 500px) {
+  :root {
+    --factor: 0.512;
+  }
+}
+
+@media only screen and (max-height: 400px) {
+  :root {
+    --factor: 0.4;
+  }
+}
+
+@media only screen and (max-height: 320px) {
+  :root {
+    --factor: 0.32;
+  }
+}
